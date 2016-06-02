@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/env bash
 
 i3_config_file="$HOME/.i3/config"
 i3_includes_file="$HOME/.i3/config.d/i3_configs.conf"
