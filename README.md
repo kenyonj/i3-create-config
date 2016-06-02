@@ -65,6 +65,6 @@ exec i3
 
 ```bash
 # i3 shorcuts for reload/restart
-bindsym $mod+$other+Shift+C exec ~/.i3/create_config; reload
-bindsym $mod+$other+Shift+R exec ~/.i3/create_config; restart
+bindsym $mod+$other+Shift+C exec ~/.i3/create_config reload
+bindsym $mod+$other+Shift+R exec ~/.i3/create_config restart
 ```
