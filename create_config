@@ -19,7 +19,7 @@ if [[ -f "$i3_includes_file" ]]; then
   get_file_name_from_line () {
     removed_semicolon="${1%;*}"
     removed_import="${removed_semicolon#import}"
-    stripped_file_name="$(echo $removed_import | sed 's/ //')"
+    stripped_file_name=$(echo $* | sed 's/\(import \)\(.*.conf\)\(;\)/\2/')
     echo "$stripped_file_name"
   }
 
@@ -33,7 +33,7 @@ if [[ -f "$i3_includes_file" ]]; then
       done=1
       continue
     else
-      if [[ "$config_line[1,7]" == "import " ]]; then
+      if [[ "$config_line" == "import "* ]]; then
         file_name="$(get_file_name_from_line $config_line)"
         include_file "$file_name"
       fi
