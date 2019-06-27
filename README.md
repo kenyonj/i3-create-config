@@ -4,6 +4,9 @@ This was created in an effort to allow the better organization of an i3 config
 file. Currently there is no way to include extra files in the main
 `~/.i3/config` file.
 
+Here is an example of how your i3 config can look by using this script:
+https://github.com/kenyonj/dotfiles-legacy/tree/99ce9a5dd79191e6699575b9b64f8302d785f780/tag-i3/i3/config.d
+
 ### Usage
 
 Create a new directory in your `~/.i3` directory called `config.d`. In this
